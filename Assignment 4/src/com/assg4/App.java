@@ -1,4 +1,4 @@
-package com.assg3;
+package com.assg4;
 
 
 import java.util.Scanner;
@@ -11,15 +11,19 @@ public class App {
 
 		System.out.print("Enter number : ");
 		Scanner in = new Scanner(System.in);
-		int count = in.nextInt();
+		byte count = in.nextByte();
 		
-		
-		for(int i = 1; i <= count; i++) {
-			for(int j = 1 ; j <= i; j++) {
+		byte i,j,x;
+		for(i = count; i > 0; i--) {
+			for(x = (byte) (i-1); x > 0 ; x--) {
+				System.out.print(" ");
+			}
+			for(j = i; j <= count; j++) {
 				System.out.print(j);
 			}
 			System.out.println();
-		}
+			}
+		
 		
 		
 		
